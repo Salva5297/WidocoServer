@@ -26,7 +26,7 @@ elif [ ${array[@]}="-h" ] || [ ${array[@]}="--help" ]; then
             break
 
 elif [ $num_args -lt 3 ]; then # mirar a ver si lo que recibe es una uri o un fichero
-    curl --location --request POST 'http://127.0.0.1:5000/' --header 'Content-Type: multipart/form-data; boundary=--------------------------554657334890040702125867' --form 'data={"getOntologyMetadata":"","rewriteAll":"","lang":"en"}' --form 'ontoFile=@'$2 --output WidocoDocs.zip
+    curl --location --request POST 'http://widoco.linkeddata.es/' --header 'Content-Type: multipart/form-data; boundary=--------------------------554657334890040702125867' --form 'data={"getOntologyMetadata":"","rewriteAll":"","lang":"en"}' --form 'ontoFile=@'$2 --output WidocoDocs.zip
 
 else
     for arg in ${array[@]};
@@ -114,11 +114,11 @@ else
 		json=$(printf ",%s" "${json[@]}")
 		json=${json:1}
 	
-		curl --location --request POST 'http://127.0.0.1:5000/' --header 'Content-Type: multipart/form-data; boundary=--------------------------554657334890040702125867' --form 'data={'$json'}' --form $data --output WidocoDocs.zip
+		curl --location --request POST 'http://widoco.linkeddata.es/' --header 'Content-Type: multipart/form-data; boundary=--------------------------554657334890040702125867' --form 'data={'$json'}' --form $data --output WidocoDocs.zip
 	else
 		json=("${arr[@]}")
 		json=$(printf ",%s" "${json[@]}")
 		json=${json:1}
-		curl --location --request POST 'http://127.0.0.1:5000/' --header 'Content-Type: multipart/form-data; boundary=--------------------------554657334890040702125867' --form 'data={'$json'}' --output WidocoDocs.zip
+		curl --location --request POST 'http://widoco.linkeddata.es/' --header 'Content-Type: multipart/form-data; boundary=--------------------------554657334890040702125867' --form 'data={'$json'}' --output WidocoDocs.zip
 	fi
 fi

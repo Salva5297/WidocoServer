@@ -19,6 +19,6 @@ Should also install [Java 1.8](https://www.oracle.com/es/java/technologies/javas
 	```
 - Execute:
 	```
-	sh widoco.sh -h
+	bash widoco.sh -h
 	```
 	To know how to call the rest api services.

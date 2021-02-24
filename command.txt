@@ -1,0 +1,9 @@
+curl --location --request POST 'http://127.0.0.1:5000/' --header 'Content-Type: multipart/form-data; boundary=--------------------------554657334890040702125867' --form 'data={"getOntologyMetadata" : "","saveConfig":"config2.txt" ,"rewriteAll" : "", "confFile" : "config.txt","lang" : "en"}' --form 'ontoFile=@ontology.ttl' --output WidocoDocs.zip
+
+
+
+
+
+
+
+java -jar widoco.jar -ontFile D:/oeg-projects/bimerr/domains/obXML/bimerr-original/ontology/ob.ttl -outFolder D:/oeg-projects/bimerr/domains/obXML/bimerr-original/documentation -getOntologyMetadata -oops -rewriteAll -saveConfig config.txt -lang en

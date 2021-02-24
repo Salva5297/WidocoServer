@@ -1,0 +1,1347 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isMeasurementOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/measurementMadeBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/relatesToProprety"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasTimeStamp"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isControlledByDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isMeasuredByDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isPropertyOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/relatesToMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#locatedIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/saref4city#AdministrativeArea"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasProperty"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isMeasuredIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/saref#UnitOfMeasure"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/decription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/lux",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/metre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerSecond-Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/mile-Statute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/mile-StatutePerHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/millibar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/pascal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/percent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A point, typically described using a coordinate system relative to Earth, such as WGS84."
+  }, {
+    "@language" : "en",
+    "@value" : "Uniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spatial Thing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The WGS84 altitude of a SpatialThing (decimal meters \nabove the local reference ellipsoid)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "altitude"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The WGS84 latitude of a SpatialThing (decimal degrees)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "latitude"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping ."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The WGS84 longitude of a SpatialThing (decimal degrees)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "longitude"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#note",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/decription" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for weather phenomena and exterior conditions."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "BIMERR Weather Ontology"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for weather phenomena and exterior conditions."
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "María Poveda-Villalón http://w3id.org/people/mpoveda"
+  }, {
+    "@value" : "Serge Chavez-Feria https://github.com/Serge3006"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Salvador González-Gerpe https://www.linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://www.oeg-upm.net/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "weat"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://bimerr.iot.linkeddata.es/def/weather"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AerosolOpticalDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property aerosol optical depth from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Albedo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property albedo from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A natural phenomenon involving the physical properties of matter and energy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Atmospheric Phenomenon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Pressure" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the pressure property atmospheric station pressure."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the average temperature for period from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the weather property ceilling height."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DataSourceAndUncertaintyFlags",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the weather property data source and uncertainty flags."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DaysSinceLastSnowfall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Snow" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the snow property days since last snowfall time from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DewPointTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property dew point temperature from EPW and Dark Sky API, first measured in Celsius degrees and second in Fahrenheit degrees."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DiffuseHorizontalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property diffuse horizontal radiation from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DirectHorizontalIlluminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Illuminance" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the illuminance property direct horizontal illuminance from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DirectNormalIlluminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Illuminance" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the illuminance property direct normal illuminance from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DirectNormalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property direct normal radiation from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#DryBulbTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property dry bulb temperature from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialDirectNormalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property extraterrestial direct normal radiation from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialHorizontalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property extrzaterrestial horizontal radiation from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Illuminance" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the illuminance property global horizontal illuminance from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property global horizontal radiation from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Ground",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ground properties where the measures are made."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ground"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundConductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground conductivity from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundDensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground density from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundSpecificHeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground specific heat from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground temperature from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#GroundTemperatureDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Ground" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the ground temperature depth from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#HorizontalInfraredRadiationIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property horizontal infrared radiation instensity from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Humidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Measure of the amount of moisture in the air.  It tells you how comfortable it is to be outside, and if there is enough moisture to create clouds and rain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Humidity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Illuminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The total luminous flux incident on a surface, per unit area. It is a measure of how much the incident light illuminates the surface, wavelength-weighted by the luminosity function to correlate with human brightness perception."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Illuminance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#InchesPerHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property liquid precipitation depth from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property liquid precipitation quantity from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the max temperature for period from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual representing the min temperature for period from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#SkyCover" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the sky cover property opaque sky cover from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property precipitable water from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Precipitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any product of the condensation of atmospheric water vapour that falls under gravity from clouds. The main forms of precipitation include drizzle, rain, sleet, snow, ice pellets, graupel and hail."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Precipitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherCodes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the weather property present weather codes from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The force exerted over a given area or object, either because of gravity pulling on it or other motion the object has.  Molecules in the air produce pressure through both their weight and movement, and this pressure is connected to other properties of the atmosphere."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Radiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The emission or transmission of energy in the form of waves or particles through space or through a material medium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Radiation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#RelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Humidity" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the humidity property relative humidity from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#SkyCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The extent to which the sky is obscured by clouds."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sky Cover"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Snow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Individual ice crystals that grow while suspended in the atmosphere—usually within clouds—and then fall, accumulating on the ground where they undergo further changes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Snow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Precipitation"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#SnowDepth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Snow" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the snow property snow depth from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Storm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any disturbed state of a body especially affecting its surface, and strongly implying a wind force. It may be marked by significant disruptions and lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Storm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Precipitation"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#TenthsOfCoverage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Thousandths",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#TotalSkyCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#SkyCover" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the sky cover property total sky cover from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Visibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the weather property visibility from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WattHourPerSquareMetre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#UnitOfMeasure" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property type to classify  weather data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#Wind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The perceptible natural movement of the air, especially in the form of a current of air blowing from a particular direction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#WindDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Wind" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the wind property wind direction from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Illuminance" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the illuminance property zenith luminance from EPW."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property apparent temperature from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property apparent temperature high from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property apparent temperature low from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property apparent temperature max from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property apparent temperature min from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#cloudCover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#SkyCover" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the sky cover property cloud cover from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relation between Sensor and AdministrativeArea that locates it in a City and a Country."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "located in"
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#moonPhase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the weather property moon phase from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#nearestStormBearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Storm" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the storm property nearest storm bearing from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#nearestStormDistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Storm" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the storm property nearest storm distance from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#ozone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the weather property ozone from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipAccumulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property precipitation accumulation from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipIntensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property precipitation intensity from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipIntensityError",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property precipitation intensity error from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property precipitation intensity max from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property precipitation probability from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#precipType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Precipitation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the precipitation property precipitation type from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Pressure" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property temperature from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property temperature high from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureLow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property temperature low from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureMax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property temperature max from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#temperatureMin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Temperature" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the temperature property temperature min from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#uvIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Radiation" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the radiation property uvIndex from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#windBearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Wind" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the wind property wind bearing from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#windGust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Wind" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the wind property wind gust from Dark Sky API."
+  } ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/weather#windSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://bimerr.iot.linkeddata.es/def/weather#Wind" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An individual representing the wind property wind speed from EPW."
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A feature of interest represents any real world entity from which a property is measured. It is linked to the different properties it has and to its measurements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature of Interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The measured value made over a property. It is also linked to the unit of measure in which the value is expressed and to the timestamp of the measurement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Anything that can be sensed, measured or controlled in households, common public buildings or offices. A list of properties that are relevant for the purpose of SAREF is proposed, but this list can be extended."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/controlsProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship specifying the property that can be controlled by a certain device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "controls property"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a feature of interest and a measurement about it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has measurement"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a feature of interest and a property of that feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasTimeStamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Time stamp of the measure. Identify when the measurement applies to the property, which can be used either for single measurements\nor for series of measurements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has time stamp"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Value of a measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has value"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/isControlledByDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship specifying the devices that can control a certain property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is controlled by device"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/isMeasuredByDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship specifying the devices that can measure a certain property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is measured by device"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/isMeasuredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship identifying the unit of measure used for a certain entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is measured in"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/isMeasurementOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a measurement and the feature of interest whose quality was measured"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is measurement of"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/isPropertyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a property and the feature of interest it belongs to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is property of"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/makeMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "make measurement"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/measurementMadeBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation between a measurement and the device that made it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "measurement made by"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/measuresProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship specifying the property that can be measured by a certain device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "measures property"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a property and the measurements it relates to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relates to measurement"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/relatesToProprety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relationship between a measurement and the property it relates to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relates to property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/saref4city#AdministrativeArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An administrative division, unit, entity, area or region, also referred to as a subnational entity, constituent unit, or country subdivision, is a portion of a country or other region delineated for the purpose of administration. (https://en.wikipedia.org/wiki/Administrative_division)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/saref4city#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Administrative Area"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/saref4city#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority. (https://en.wikipedia.org/wiki/City)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/saref4city#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/saref4city#AdministrativeArea"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/saref4city#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A country is a region that is identified as a distinct national entity in political geography. (https://en.wikipedia.org/wiki/Country)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/saref4city#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/saref4city#AdministrativeArea"
+  } ]
+}, {
+  "@id" : "https://w3id.org/saref#UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unit of measure is a standard for measurement of a quantity, such as a saref:Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when it is said 10 Watt, it is actually meant 10 times the definite predetermined power called \"watt\". The definition of unit of measure in SAREF refers to the definition of unit of measure in the Ontology of units of Measure (OM). A list of some units of measure that are relevant for the purpose of SAREF is proposed, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/saref#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unit of Measure"
+  } ]
+} ]

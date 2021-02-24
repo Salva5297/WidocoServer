@@ -1,0 +1,1647 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://bimerr.iot.linkeddata.es/def/weather#"
+     xml:base="https://bimerr.iot.linkeddata.es/def/weather"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://bimerr.iot.linkeddata.es/def/weather">
+        <dc:decription xml:lang="en">Ontology for weather phenomena and exterior conditions.</dc:decription>
+        <dc:title xml:lang="en">BIMERR Weather Ontology</dc:title>
+        <terms:abstract xml:lang="en">Ontology for weather phenomena and exterior conditions.</terms:abstract>
+        <terms:contributor>María Poveda-Villalón http://w3id.org/people/mpoveda</terms:contributor>
+        <terms:contributor>Serge Chavez-Feria https://github.com/Serge3006</terms:contributor>
+        <terms:creator>Salvador González-Gerpe https://www.linkedin.com/in/artificialintelligence-researcher-salvadorgonzalezgerpe</terms:creator>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <vann:preferredNamespacePrefix>weat</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://bimerr.iot.linkeddata.es/def/weather</vann:preferredNamespaceUri>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/decription -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/decription"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="en">The relation between something and the point, 
+ or other geometrical thing in space, where it is.  For example, the realtionship between
+ a radio tower and a Point with a given lat and long.
+ Or a relationship between a park and its outline as a closed arc of points, or a road and
+ its location as a arc (a sequence of points).
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
+ an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+        <rdfs:label xml:lang="en">location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#locatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/weather#locatedIn">
+        <rdfs:comment xml:lang="en">Relation between Sensor and AdministrativeArea that locates it in a City and a Country.</rdfs:comment>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/controlsProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/controlsProperty">
+        <rdfs:comment xml:lang="en">A relationship specifying the property that can be controlled by a certain device</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">controls property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/hasMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasMeasurement">
+        <rdfs:comment xml:lang="en">A relationship between a feature of interest and a measurement about it</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">has measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/hasProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">A relationship between a feature of interest and a property of that feature</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <rdfs:label xml:lang="en">has property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isControlledByDevice -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isControlledByDevice">
+        <rdfs:comment xml:lang="en">A relationship specifying the devices that can control a certain property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is controlled by device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isMeasuredByDevice -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredByDevice">
+        <rdfs:comment xml:lang="en">A relationship specifying the devices that can measure a certain property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is measured by device</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isMeasuredIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredIn">
+        <rdfs:comment xml:lang="en">A relationship identifying the unit of measure used for a certain entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is measured in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isMeasurementOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasurementOf">
+        <rdfs:comment xml:lang="en">A relationship between a measurement and the feature of interest whose quality was measured</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is measurement of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isPropertyOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isPropertyOf">
+        <rdfs:comment xml:lang="en">A relationship between a property and the feature of interest it belongs to</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">is property of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/makeMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/makeMeasurement">
+        <rdfs:comment xml:lang="en">A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">make measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/measurementMadeBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measurementMadeBy">
+        <rdfs:comment xml:lang="en">A relation between a measurement and the device that made it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">measurement made by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/measuresProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measuresProperty">
+        <rdfs:comment xml:lang="en">A relationship specifying the property that can be measured by a certain device</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">measures property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/relatesToMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToMeasurement">
+        <rdfs:comment xml:lang="en">A relationship between a property and the measurements it relates to</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">relates to measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/relatesToProprety -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToProprety">
+        <rdfs:comment xml:lang="en">A relationship between a measurement and the property it relates to</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">relates to property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+        <rdfs:comment xml:lang="en">The WGS84 altitude of a SpatialThing (decimal meters 
+above the local reference ellipsoid).</rdfs:comment>
+        <rdfs:label xml:lang="en">altitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:comment xml:lang="en">The WGS84 latitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:label xml:lang="en">latitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:comment xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:label xml:lang="en">longitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/hasTimeStamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core/hasTimeStamp">
+        <rdfs:comment xml:lang="en">Time stamp of the measure. Identify when the measurement applies to the property, which can be used either for single measurements
+or for series of measurements</rdfs:comment>
+        <rdfs:label xml:lang="en">has time stamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core/hasValue">
+        <rdfs:comment xml:lang="en">Value of a measurement</rdfs:comment>
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A point, typically described using a coordinate system relative to Earth, such as WGS84.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+        <rdfs:label xml:lang="en">Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:comment xml:lang="en">Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+        <rdfs:label xml:lang="en">Spatial Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:comment xml:lang="en">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <skos:example xml:lang="en">Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment xml:lang="en">A natural phenomenon involving the physical properties of matter and energy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Atmospheric Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Ground -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Ground">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment xml:lang="en">Ground properties where the measures are made.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ground</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Humidity -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Humidity">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>Measure of the amount of moisture in the air.  It tells you how comfortable it is to be outside, and if there is enough moisture to create clouds and rain.</rdfs:comment>
+        <rdfs:label xml:lang="en">Humidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Illuminance -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Illuminance">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>The total luminous flux incident on a surface, per unit area. It is a measure of how much the incident light illuminates the surface, wavelength-weighted by the luminosity function to correlate with human brightness perception.</rdfs:comment>
+        <rdfs:label xml:lang="en">Illuminance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Precipitation -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Precipitation">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>Any product of the condensation of atmospheric water vapour that falls under gravity from clouds. The main forms of precipitation include drizzle, rain, sleet, snow, ice pellets, graupel and hail.</rdfs:comment>
+        <rdfs:label xml:lang="en">Precipitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Pressure -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Pressure">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment xml:lang="en">The force exerted over a given area or object, either because of gravity pulling on it or other motion the object has.  Molecules in the air produce pressure through both their weight and movement, and this pressure is connected to other properties of the atmosphere.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Radiation -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Radiation">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment xml:lang="en">The emission or transmission of energy in the form of waves or particles through space or through a material medium.</rdfs:comment>
+        <rdfs:label xml:lang="en">Radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#SkyCover -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#SkyCover">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment xml:lang="en">The extent to which the sky is obscured by clouds.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sky Cover</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Snow -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Snow">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment xml:lang="en">Individual ice crystals that grow while suspended in the atmosphere—usually within clouds—and then fall, accumulating on the ground where they undergo further changes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Snow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Storm -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Storm">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment xml:lang="en">Any disturbed state of a body especially affecting its surface, and strongly implying a wind force. It may be marked by significant disruptions and lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Storm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Temperature -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Temperature">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment xml:lang="en">The measure of thermal or internal energy of the molecules within an object or gas.    We can measure temperature of an object using either direct contact or remote sensing.  Temperature of air is closely related to other atmospheric properties, such as pressure, volume and density.</rdfs:comment>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+        <rdfs:comment xml:lang="en">Property type to classify  weather data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Weather Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Wind -->
+
+
+    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Wind">
+        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#AtmosphericPhenomenon"/>
+        <rdfs:comment>The perceptible natural movement of the air, especially in the form of a current of air blowing from a particular direction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Device -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#locatedIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/saref4city#AdministrativeArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/FeatureOfInterest">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasMeasurement"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasProperty"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A feature of interest represents any real world entity from which a property is measured. It is linked to the different properties it has and to its measurements.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">Feature of Interest</rdfs:label>
+        <skos:example xml:lang="en">When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Measurement -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasurementOf"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/measurementMadeBy"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToProprety"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasTimeStamp"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The measured value made over a property. It is also linked to the unit of measure in which the value is expressed and to the timestamp of the measurement.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://saref.etsi.org/core/"/>
+        <rdfs:label xml:lang="en">Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Property -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isControlledByDevice"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredByDevice"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isPropertyOf"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToMeasurement"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Anything that can be sensed, measured or controlled in households, common public buildings or offices. A list of properties that are relevant for the purpose of SAREF is proposed, but this list can be extended.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <rdfs:label xml:lang="en">Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4city#AdministrativeArea -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4city#AdministrativeArea">
+        <rdfs:comment xml:lang="en">An administrative division, unit, entity, area or region, also referred to as a subnational entity, constituent unit, or country subdivision, is a portion of a country or other region delineated for the purpose of administration. (https://en.wikipedia.org/wiki/Administrative_division)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city#"/>
+        <rdfs:label xml:lang="en">Administrative Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4city#City -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4city#City">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4city#AdministrativeArea"/>
+        <rdfs:comment xml:lang="en">A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority. (https://en.wikipedia.org/wiki/City)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city#"/>
+        <rdfs:label xml:lang="en">City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4city#Country -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4city#Country">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4city#AdministrativeArea"/>
+        <rdfs:comment xml:lang="en">A country is a region that is identified as a distinct national entity in political geography. (https://en.wikipedia.org/wiki/Country)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city#"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref#UnitOfMeasure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/saref#UnitOfMeasure">
+        <rdfs:comment xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a saref:Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when it is said 10 Watt, it is actually meant 10 times the definite predetermined power called &quot;watt&quot;. The definition of unit of measure in SAREF refers to the definition of unit of measure in the Ontology of units of Measure (OM). A list of some units of measure that are relevant for the purpose of SAREF is proposed, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
+        <rdfs:label xml:lang="en">Unit of Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Density -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Density">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/candelaPerSquareMetre">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/day -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/day">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degree -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degree">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hour -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hour">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/inch-International">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerKilogram">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerCubicmetre">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilometre">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/lux -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lux">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/metre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metre">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerSecond-Time -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerSecond-Time">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/mile-Statute -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mile-Statute">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/mile-StatutePerHour -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/mile-StatutePerHour">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/millibar -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millibar">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/pascal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/pascal">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/percent -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/percent">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerMetreKelvin">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#AerosolOpticalDepth -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#AerosolOpticalDepth">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property aerosol optical depth from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Albedo -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Albedo">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property albedo from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#AtmosphericStationPressure">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Pressure"/>
+        <rdfs:comment>An individual representing the pressure property atmospheric station pressure.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#AverageTemperatureForPeriod">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the average temperature for period from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#CeillingHeight">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>An individual representing the weather property ceilling height.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DataSourceAndUncertaintyFlags -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DataSourceAndUncertaintyFlags">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>An individual representing the weather property data source and uncertainty flags.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DaysSinceLastSnowfall -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DaysSinceLastSnowfall">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Snow"/>
+        <rdfs:comment>An individual representing the snow property days since last snowfall time from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DewPointTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DewPointTemperature">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property dew point temperature from EPW and Dark Sky API, first measured in Celsius degrees and second in Fahrenheit degrees.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DiffuseHorizontalRadiation -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DiffuseHorizontalRadiation">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property diffuse horizontal radiation from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DirectHorizontalIlluminance -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DirectHorizontalIlluminance">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Illuminance"/>
+        <rdfs:comment>An individual representing the illuminance property direct horizontal illuminance from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DirectNormalIlluminance -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DirectNormalIlluminance">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Illuminance"/>
+        <rdfs:comment>An individual representing the illuminance property direct normal illuminance from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DirectNormalRadiation -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DirectNormalRadiation">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property direct normal radiation from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#DryBulbTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#DryBulbTemperature">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property dry bulb temperature from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialDirectNormalRadiation -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialDirectNormalRadiation">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property extraterrestial direct normal radiation from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialHorizontalRadiation -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#ExtraterrestialHorizontalRadiation">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property extrzaterrestial horizontal radiation from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalIlluminance">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Illuminance"/>
+        <rdfs:comment>An individual representing the illuminance property global horizontal illuminance from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalRadiation -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#GlobalHorizontalRadiation">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property global horizontal radiation from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#GroundConductivity -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#GroundConductivity">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground conductivity from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#GroundDensity -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#GroundDensity">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground density from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#GroundSpecificHeat -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#GroundSpecificHeat">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground specific heat from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#GroundTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#GroundTemperature">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground temperature from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#GroundTemperatureDepth -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#GroundTemperatureDepth">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Ground"/>
+        <rdfs:comment xml:lang="en">An individual representing the ground temperature depth from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#HorizontalInfraredRadiationIntensity -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#HorizontalInfraredRadiationIntensity">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property horizontal infrared radiation instensity from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#InchesPerHour -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#InchesPerHour">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationDepth -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationDepth">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property liquid precipitation depth from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationQuantity -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#LiquidPrecipitationQuantity">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property liquid precipitation quantity from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#MaxTemperatureForPeriod">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the max temperature for period from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#MinTemperatureForPeriod">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment xml:lang="en">An individual representing the min temperature for period from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#OpaqueSkycover">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#SkyCover"/>
+        <rdfs:comment>An individual representing the sky cover property opaque sky cover from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#PrecipitableWater">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property precipitable water from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherCodes -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherCodes">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>An individual representing the weather property present weather codes from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherObservation -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#PresentWeatherObservation">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#RelativeHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#RelativeHumidity">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Humidity"/>
+        <rdfs:comment>An individual representing the humidity property relative humidity from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#SnowDepth -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#SnowDepth">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Snow"/>
+        <rdfs:comment>An individual representing the snow property snow depth from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#TenthsOfCoverage -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#TenthsOfCoverage">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Thousandths -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Thousandths">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#TotalSkyCover -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#TotalSkyCover">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#SkyCover"/>
+        <rdfs:comment>An individual representing the sky cover property total sky cover from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#Visibility -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#Visibility">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>An individual representing the weather property visibility from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#WattHourPerSquareMetre -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#WattHourPerSquareMetre">
+        <rdf:type rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#WindDirection -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#WindDirection">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
+        <rdfs:comment>An individual representing the wind property wind direction from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#ZenithLuminance">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Illuminance"/>
+        <rdfs:comment>An individual representing the illuminance property zenith luminance from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperature">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property apparent temperature from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureHigh">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property apparent temperature high from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureLow">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property apparent temperature low from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMax">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property apparent temperature max from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#apparentTemperatureMin">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property apparent temperature min from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#cloudCover -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#cloudCover">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#SkyCover"/>
+        <rdfs:comment>An individual representing the sky cover property cloud cover from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#moonPhase -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#moonPhase">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>An individual representing the weather property moon phase from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#nearestStormBearing -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#nearestStormBearing">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Storm"/>
+        <rdfs:comment>An individual representing the storm property nearest storm bearing from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#nearestStormDistance -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#nearestStormDistance">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Storm"/>
+        <rdfs:comment>An individual representing the storm property nearest storm distance from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#ozone -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#ozone">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#WeatherProperty"/>
+        <rdfs:comment>An individual representing the weather property ozone from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipAccumulation -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipAccumulation">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property precipitation accumulation from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipIntensity -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipIntensity">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property precipitation intensity from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipIntensityError -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipIntensityError">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property precipitation intensity error from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipIntensityMax">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property precipitation intensity max from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipProbability -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipProbability">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property precipitation probability from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#precipType -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#precipType">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Precipitation"/>
+        <rdfs:comment>An individual representing the precipitation property precipitation type from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#pressure -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#pressure">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Pressure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperature">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property temperature from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureHigh">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property temperature high from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureLow -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureLow">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property temperature low from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureMax -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureMax">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property temperature max from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#temperatureMin -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#temperatureMin">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Temperature"/>
+        <rdfs:comment>An individual representing the temperature property temperature min from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#uvIndex -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#uvIndex">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Radiation"/>
+        <rdfs:comment>An individual representing the radiation property uvIndex from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#windBearing -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#windBearing">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
+        <rdfs:comment>An individual representing the wind property wind bearing from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#windGust -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#windGust">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
+        <rdfs:comment>An individual representing the wind property wind gust from Dark Sky API.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/weather#windSpeed -->
+
+
+    <owl:NamedIndividual rdf:about="https://bimerr.iot.linkeddata.es/def/weather#windSpeed">
+        <rdf:type rdf:resource="https://bimerr.iot.linkeddata.es/def/weather#Wind"/>
+        <rdfs:comment>An individual representing the wind property wind speed from EPW.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
